@@ -3,7 +3,10 @@
 	[
 		{
 			"name": "HostSettings",
-			"path": "."
+			"path": ".",
 		}
-	]
+	],
+	"debugger_configurations":
+	[
+	],
 }
