@@ -24,7 +24,9 @@ computers with a host name of `asteroid` or `moon`:
 ```
 
 This is useful if you have computers with the same `<platform>` that need
-different settings.
+different settings. HostSettings adjusts the settings without changing the
+existing settings files (handy if you're keeping your settings in version
+control!).
 
 ## License
 
