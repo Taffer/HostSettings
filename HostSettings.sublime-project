@@ -4,7 +4,10 @@
 		{
 			"name": "HostSettings",
 			"path": ".",
-		}
+		},
+		{
+			"path": "../package_control_channel",
+		},
 	],
 	"debugger_configurations":
 	[
