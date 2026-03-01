@@ -1,0 +1,24 @@
+HostSettings
+
+This plugin lets you tweak settings based on what computer you're
+currently using.
+
+1. Add a `host-settings` dictionary to your
+   `Preferences.sublime-settings`.
+2. Inside `host-settings`, add a dictionary matching the
+   computer host name. Settings inside this dictionary override the
+   existing settings.
+
+For example, these `host-specific` settings tweak the `font_size` for
+computers with a host name of `asteroid` or `moon`:
+
+...
+    "host-specific": {
+        "asteroid": {
+            "font_size": 12,
+        },
+        "moon": {
+            "font_size": 10,
+        },
+    },
+...
