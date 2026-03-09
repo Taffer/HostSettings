@@ -23,4 +23,6 @@ repos:
     rev: v0.15.4
     hooks:
       - id: ruff-check
+        args: ["--target-version", "py38"]
       - id: ruff-format
+        args: ["--target-version", "py38", "--line-length", "132"]
