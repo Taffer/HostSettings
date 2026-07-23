@@ -36,12 +36,8 @@ class HostSettingsListener(sublime_plugin.EventListener):
             self.hostname = socket.gethostname() or "localhost"
 
         if not self.preferences:
-            self.preferences = (
-                sublime.load_settings("Preferences.sublime-settings") or {}
-            )
-            self.preferences.add_on_change(
-                "HostSettingsListener", self.settings_changed
-            )
+            self.preferences = sublime.load_settings("Preferences.sublime-settings") or {}
+            self.preferences.add_on_change("HostSettingsListener", self.settings_changed)
 
         for view in views:
             self.on_new(view)
