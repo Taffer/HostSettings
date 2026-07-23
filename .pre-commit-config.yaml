@@ -10,17 +10,17 @@ repos:
         args: ["--fix=lf"]
       - id: trailing-whitespace
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.4.1
+    rev: v2.4.3
     hooks:
       - id: codespell
         args: ["-I", ".codespell-ignored"]
   - repo: https://github.com/DavidAnson/markdownlint-cli2
-    rev: v0.21.0
+    rev: v0.23.1
     hooks:
       - id: markdownlint-cli2
         files: '\.md$'
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.4
+    rev: v0.15.22
     hooks:
       - id: ruff-check
         args: ["--target-version", "py38"]
